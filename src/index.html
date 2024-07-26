@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="./index.js"></script>
+  <title>To-Do-List</title>
+</head>
+<body>
+  <div class="w-screen h-screen bg-gradient-to-b from-frost-start to-frost-end  flex items-center justify-center duration-300" id="main">
+    <div class="main-content p-5 bg-slate-600 rounded-xl ">
+      <div class="head-content mb-3">
+        <h1 class="font-bold text-3xl text-center text-white">To-Do-List
+      </div>
+      <div class="input-content p-2 mb-1" >
+        <form action="" class="flex flex-wrap">
+          <input class="outline-none rounded-l-lg p-2" type="text" placeholder="Task to do!" id="input" required/>
+        <button class="text-black  p-2 bg-white rounded-r-lg" id="btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+          <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
+        </svg>
+        </button>
+        </form>
+      </div>
+      <div class="navbar-contents">
+        <ul class="navBarList hidden ">
+          <li class="mr-2 text-white"><button id="all-tasks" class="nav-button px-2 py-1 text-center duration-300 rounded-lg">All</button></li>
+          <li class="mr-2 text-white"><button id="due-tasks" class="nav-button px-2 py-1 text-center duration-300 rounded-lg">Due</button></li>
+          <li class="mr-2 text-white"><button id="completed-tasks" class="nav-button px-2 py-1 text-center duration-300 rounded-lg">Completed</button></li>
+        </ul>
+      </div>
+      <div class="output-contents duration-500">
+        <div class="task-list"></div>
+        <div class="pagination mt-4 flex justify-center items-center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
